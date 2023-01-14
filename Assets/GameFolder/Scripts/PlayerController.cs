@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D body;
     public Text scoreView;
     public Transform gameOver;
+    public Animator anim;
 
     [SerializeField]
     int score;
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim.enabled = false;
         body = GetComponent<Rigidbody2D>();
     }
 
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             body.velocity = Vector2.up * 8;
+            anim.enabled = true;
 
         }
     }

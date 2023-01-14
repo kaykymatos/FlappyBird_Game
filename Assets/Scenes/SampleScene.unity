@@ -315,6 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreView: {fileID: 1468396146}
   gameOver: {fileID: 194181124}
+  anim: {fileID: 1421729365}
   score: 0
 --- !u!1 &298087003
 GameObject:
